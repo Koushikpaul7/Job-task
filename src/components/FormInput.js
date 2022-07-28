@@ -6,19 +6,19 @@ function FormInput({handleChange, formInputData, handleSubmit}){
         <h5><u>Recipt Details</u></h5>
          <div className="form-row col ">
           <div className="col  d-flex justify-content-between">
-            <label>Date</label>
+            <label>Date <sup className='text-danger'>*</sup></label>
             <input  type="date" onChange={handleChange} value={formInputData.date} name="date" className="form-control w-50  box color"  placeholder="Enter Date" />
           </div>
           <br />
          
           <div className=" d-flex justify-content-between">
-            <label>Amount</label>
+            <label>Amount <sup className='text-danger'>*</sup></label>
             <input type="number" onChange={handleChange} value={formInputData.amount} name="amount" className="form-control w-50 box color" placeholder="Enter Amount (in INR)" />
           </div>
           <br />
           <div className="col">
           <div className=" d-flex justify-content-between">
-            <label >Payment Mode</label>
+            <label >Payment Mode  <sup className='text-danger'>*</sup></label>
       <select name='paymentMode' onChange={handleChange} value={formInputData.paymentMode} class="form-select w-50 box color">
         <option >Cash</option>
         <option >Card</option>
@@ -34,7 +34,7 @@ function FormInput({handleChange, formInputData, handleSubmit}){
           </div>
           <br />
           <div className="col d-flex justify-content-end ">
-            <input type="submit" className="btn btn-danger mx-5" />
+            <input type="submit" value="Cancel" className="btn btn-danger mx-5" />
             <input type="submit" onClick={handleSubmit} className="btn btn-primary mx-5" />
           </div>
         </div>

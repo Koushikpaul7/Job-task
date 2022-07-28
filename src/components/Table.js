@@ -6,7 +6,7 @@ function Table({tableData}){
             <thead>
                 <tr>
                     <th>SL No.</th>
-                    <th>Date </th>
+                    <th>Date  </th>
                     <th>Amount</th>
                     <th>Payment mode</th>
                     <th>Remark</th>
